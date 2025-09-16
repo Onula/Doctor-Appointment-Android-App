@@ -1,2 +1,22 @@
-# Doctor-Appointment-Android-App
-Doctor Appointment App is an Android application that allows patients to schedule and manage doctor appointments in real time. The app is built in Java (Android Studio) and communicates with a PHP backend, which fetches data from a MySQL database and returns it in JSON format to the Android client.
+# Doctor Appointment App
+
+An Android application for doctor appointment scheduling with **Java (Android Studio)**, **PHP**, and **MySQL**.  
+The PHP backend fetches data from the MySQL database and sends it as **JSON** to the Android client, enabling real-time appointment management.  
+
+---
+
+## Features
+- User authentication (patients & doctors)
+- Book, cancel, and view appointments
+- Doctor availability management
+- PHP backend returning JSON responses
+- Real-time database integration with MySQL
+- Mobile-friendly interface built in Android Studio (Java)
+
+---
+
+## 🛠 Tech Stack
+- **Frontend (Mobile):** Java (Android Studio)
+- **Backend:** PHP
+- **Database:** MySQL
+- **Architecture:** Client–Server with JSON communication

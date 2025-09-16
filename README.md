@@ -1,6 +1,6 @@
 # Doctor Appointment App
 
-An Android application for doctor appointment scheduling with **Java(JDK 17) (Android Studio)**, **PHP**, and **MySQL**.  
+An Android application for doctor appointment scheduling, developed in Android Studio with Java (JDK 17) & XML layouts, and integrated with a PHP backend and a MySQL database. 
 The PHP backend serves as the communication layer between the Android client and the MySQL database. It handles all database interactions on the server side and returns the results to the Android application in JSON format, enabling seamless and real-time synchronization between the mobile interface and the database. 
 
 ---

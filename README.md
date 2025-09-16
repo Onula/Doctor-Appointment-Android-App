@@ -24,6 +24,6 @@ This project was developed as part of the **Mobile Application Development** cou
 - **Database:** MySQL
 - **Architecture:** Client–Server with JSON communication
 
-
+---
 This project was developed **for educational purposes only** as part of a university course.  
 It is **not intended for production use** in real healthcare environments and should not be used to manage actual patient data.  

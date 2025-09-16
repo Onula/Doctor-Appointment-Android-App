@@ -1,10 +1,7 @@
 # Doctor Appointment App
 
 An Android application for doctor appointment scheduling with **Java (Android Studio)**, **PHP**, and **MySQL**.  
-The PHP backend fetches data from the MySQL database and sends it as **JSON** to the Android client, enabling real-time appointment management.  
-
-This project was developed as part of the **Mobile Application Development** course at the University of Macedonia.  
-
+The PHP backend serves as the communication layer between the Android client and the MySQL database. It handles all database interactions on the server side and returns the results to the Android application in JSON format, enabling seamless and real-time synchronization between the mobile interface and the database. 
 ---
 
 ## Features
@@ -25,5 +22,5 @@ This project was developed as part of the **Mobile Application Development** cou
 - **Architecture:** Client–Server with JSON communication
 
 ---
-This project was developed **for educational purposes only** as part of a university course.  
+This project was developed **for educational purposes only**.  
 It is **not intended for production use** in real healthcare environments and should not be used to manage actual patient data.  

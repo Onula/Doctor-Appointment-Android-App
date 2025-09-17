@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 public class UserDBConnector {
     static DBManager dbMan = new DBManager();
     private static String myIP = dbMan.getMyIP();
-    private static final String DOCTOR_PHP_SCRIPT_URL = "http://"+myIP+"/physiotherapyDBServices/User.php";
+    private static final String DOCTOR_PHP_SCRIPT_URL = "http://"+myIP+"/PHPDbServices/User.php";
     private String actionName;
     private String url;
 

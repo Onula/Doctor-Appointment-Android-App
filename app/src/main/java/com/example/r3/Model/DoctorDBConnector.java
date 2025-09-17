@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class DoctorDBConnector {
     static DBManager dbMan = new DBManager();
     private static String myIP = dbMan.getMyIP();
-    private static final String DOCTOR_PHP_SCRIPT_URL = "http://"+myIP+"/physiotherapyDBServices/Doctor.php";
+    private static final String DOCTOR_PHP_SCRIPT_URL = "http://"+myIP+"/PHPDbServices/Doctor.php";
     private String actionName;
     private String url;
 

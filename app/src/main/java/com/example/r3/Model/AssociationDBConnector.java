@@ -3,7 +3,7 @@ package com.example.r3.Model;
 public class AssociationDBConnector {
     static DBManager dbMan = new DBManager();
     private static String myIP = dbMan.getMyIP();
-    private static final String ASSOCIATION_PHP_SCRIPT_URL = "http://"+myIP+"/physiotherapyDBServices/Association.php";
+    private static final String ASSOCIATION_PHP_SCRIPT_URL = "http://"+myIP+"/PHPDbServices/Association.php";
     private String actionName;
     private String url;
 

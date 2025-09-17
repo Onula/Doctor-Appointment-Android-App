@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SignIn">
+
+    <fragment
+        android:id="@+id/DocMenu"
+        android:name="com.example.r3.DocMenuFragment"
+        android:label="Doc_Menu"
+        tools:layout="@layout/fragment_doc_menu">
+
+
+        <action
+            android:id="@+id/action_SecondFragment_to_weeklyProgramm"
+            app:destination="@id/R6WeeklyProgramm" />
+        <action
+            android:id="@+id/action_DocMenu_to_r4PatientHistory"
+            app:destination="@id/r4PatientHistory" />
+        <action
+            android:id="@+id/action_DocMenu_to_r5SearchPatient"
+            app:destination="@id/r5SearchPatient" />
+        <action
+            android:id="@+id/action_DocMenu_to_r7DisplayAndManagementOfRequests"
+            app:destination="@id/r7DisplayAndManagementOfRequests" />
+        <action
+            android:id="@+id/action_DocMenu_to_r8VisitAdditionAndActionLoggin"
+            app:destination="@id/r8VisitAdditionAndActionLoggin" />
+        <action
+            android:id="@+id/action_DocMenu_to_R3CreatePatient"
+            app:destination="@id/R3CreatePatient" />
+        <action
+            android:id="@+id/action_DocMenu_to_selectRole"
+            app:destination="@id/SignIn" />
+
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/R6WeeklyProgramm"
+        android:name="com.example.r3.R6WeeklyProgramm"
+        android:label="fragment_weekly_programm"
+        tools:layout="@layout/fragment_r6_weekly_programm" >
+        <action
+            android:id="@+id/action_weeklyProgramm_to_SecondFragment"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_R6WeeklyProgramm_to_selectRole"
+            app:destination="@id/SignIn" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/R3CreatePatient"
+        android:name="com.example.r3.R3CreatePatient"
+        android:label="R3CreatePatient"
+        tools:layout="@layout/fragment_r3_create_patient" >
+        <action
+            android:id="@+id/action_R3CreatePatient_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_R3CreatePatient_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/r8VisitAdditionAndActionLoggin"
+        android:name="com.example.r3.R8VisitAdditionAndActionLoggin"
+        android:label="fragment_r8_visit_addition_and_action_loggin"
+        tools:layout="@layout/fragment_r8_visit_addition_and_action_loggin" >
+        <action
+            android:id="@+id/action_r8VisitAdditionAndActionLoggin_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_r8VisitAdditionAndActionLoggin_to_selectRole2"
+            app:destination="@id/SignIn" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/r7DisplayAndManagementOfRequests"
+        android:name="com.example.r3.R7DisplayAndManagementOfRequests"
+        android:label="fragment_r7_display_and_management_of_requests"
+        tools:layout="@layout/fragment_r7_display_and_management_of_requests" >
+        <action
+            android:id="@+id/action_r7DisplayAndManagementOfRequests_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_r7DisplayAndManagementOfRequests_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/r5SearchPatient"
+        android:name="com.example.r3.R5SearchPatient"
+        android:label="fragment_r5_search_patient"
+        tools:layout="@layout/fragment_r5_search_patient" >
+        <action
+            android:id="@+id/action_r5SearchPatient_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_r5SearchPatient_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/r4PatientHistory"
+        android:name="com.example.r3.R4PatientHistory"
+        android:label="fragment_r4_patient_history"
+        tools:layout="@layout/fragment_r4_patient_history" >
+        <action
+            android:id="@+id/action_r4PatientHistory_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_r4PatientHistory_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/PSFmemberMenu2"
+        android:name="com.example.r3.PSFmemberMenu"
+        android:label="fragment_p_s_fmember_menu"
+        tools:layout="@layout/fragment_p_s_fmember_menu" >
+        <action
+            android:id="@+id/action_PSFmemberMenu2_to_r2CreateProvision"
+            app:destination="@id/r2CreateProvision" />
+        <action
+            android:id="@+id/action_PSFmemberMenu2_to_r1CreatePhysiotherapy"
+            app:destination="@id/R1CreatePhysiotherapy" />
+        <action
+            android:id="@+id/action_PSFmemberMenu2_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/R1CreatePhysiotherapy"
+        android:name="com.example.r3.R1CreatePhysiotherapy"
+        android:label="R1CreatePhysiotherapy"
+        tools:layout="@layout/fragment_r1_create_physiotherapy">
+        <action
+            android:id="@+id/action_r1CreatePhysiotherapy_to_PSFmemberMenu2"
+            app:destination="@id/PSFmemberMenu2" />
+        <action
+            android:id="@+id/action_R1CreatePhysiotherapy_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/r2CreateProvision"
+        android:name="com.example.r3.R2CreateProvision"
+        android:label="fragment_r2__create_provision"
+        tools:layout="@layout/fragment_r2__create_provision" >
+        <action
+            android:id="@+id/action_r2CreateProvision_to_PSFmemberMenu2"
+            app:destination="@id/PSFmemberMenu2" />
+        <action
+            android:id="@+id/action_r2CreateProvision_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientMenuFragment"
+        android:name="com.example.r3.PatientMenuFragment"
+        android:label="fragment_patient_menu"
+        tools:layout="@layout/fragment_patient_menu" >
+        <action
+            android:id="@+id/action_patientMenuFragment_to_r9AppointmenetRequest"
+            app:destination="@id/r9AppointmenetRequest" />
+        <action
+            android:id="@+id/action_patientMenuFragment_to_r10AnalyticalEconomicState"
+            app:destination="@id/r10AnalyticalEconomicState" />
+        <action
+            android:id="@+id/action_patientMenuFragment_to_r9AppointmenetRequest2"
+            app:destination="@id/r9AppointmenetRequest" />
+        <action
+            android:id="@+id/action_patientMenuFragment_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/r9AppointmenetRequest"
+        android:name="com.example.r3.R9AppointmenetRequest"
+        android:label="fragment_r9_appointmenet_request"
+        tools:layout="@layout/fragment_r9_appointmenet_request" >
+        <action
+            android:id="@+id/action_r9AppointmenetRequest_to_patientMenuFragment"
+            app:destination="@id/patientMenuFragment" />
+        <action
+            android:id="@+id/action_r9AppointmenetRequest_to_selectRole"
+            app:destination="@id/SignIn" />
+        <action
+            android:id="@+id/action_r9AppointmenetRequest_to_r9AppointmentRequestB"
+            app:destination="@id/r9AppointmentRequestB" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/r10AnalyticalEconomicState"
+        android:name="com.example.r3.R10AnalyticalEconomicState"
+        android:label="fragment_r10_analytical_economic_state"
+        tools:layout="@layout/fragment_r10_analytical_economic_state" >
+        <action
+            android:id="@+id/action_r10AnalyticalEconomicState_to_patientMenuFragment"
+            app:destination="@id/patientMenuFragment" />
+        <action
+            android:id="@+id/action_r10AnalyticalEconomicState_to_selectRole"
+            app:destination="@id/SignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignIn"
+        android:name="com.example.r3.SignIn"
+        android:label="SelectRole"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_selectRole_to_PSFmemberMenu2"
+            app:destination="@id/PSFmemberMenu2" />
+        <action
+            android:id="@+id/action_selectRole_to_DocMenu"
+            app:destination="@id/DocMenu" />
+        <action
+            android:id="@+id/action_selectRole_to_patientMenuFragment"
+            app:destination="@id/patientMenuFragment" />
+        <argument
+            android:name="userID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/r9AppointmentRequestB"
+        android:name="com.example.r3.R9AppointmentRequestB"
+        android:label="fragment_r9_appointment_request_b"
+        tools:layout="@layout/fragment_r9_appointment_request_b" >
+        <action
+            android:id="@+id/action_r9AppointmentRequestB_to_r9AppointmenetRequest"
+            app:destination="@id/r9AppointmenetRequest" />
+    </fragment>
+</navigation>

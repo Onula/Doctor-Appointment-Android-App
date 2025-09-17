@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">R3</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="create_button_text">Create</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string-array name="menu">
+        <item>Δημιουργία Ασθενή</item>
+        <item>Ιστορικό Ασθενή</item>
+        <item>Αναζήτηση Ασθενή</item>
+        <item>Εβδομαδιαίο Πλάνο</item>
+        <item>Αιτήματα Ραντεβού</item>
+        <item>Επισκέψεις και Ενέργειες</item>
+    </string-array>
+
+    <string name="Code">Κωδικός</string>
+    <string name="Name">Όνομα</string>
+    <string name="Description">Περιγραφή</string>
+    <string name="CostPerSession">Κόστος ανά Συνεδρία</string>
+    <string name="Creation">Δημιουργία</string>
+
+    <!-- R5 String Values -->
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="_________________string"> </string>
+    <string name="search_bar_string">Search_Bar</string>
+    <string name="user1_string">User1</string>
+    <string name="user1_ek1_string">User1</string>
+    <string name="user1_ek2_string">User1</string>
+    <string name="user2_string">User2</string>
+    <string name="user3_string">User3</string>
+    <string name="user4_string">User4</string>
+    <string name="select_user_string">Select_User</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

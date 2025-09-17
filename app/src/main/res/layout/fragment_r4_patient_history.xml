@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+
+    <ImageView
+        android:id="@+id/signout_pic3"
+        android:layout_width="24dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:src="@drawable/signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <ImageView
+        android:id="@+id/menu_pic3"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/grammes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_pic3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="379dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/patient_name_text"
+        android:layout_marginTop="121dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:background="@color/teal_200">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Όνομα Χρήστη:" />
+
+            <TextView
+                android:id="@+id/user_name_value"
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:text="first Name" />
+
+            <TextView
+                android:id="@+id/user_name_value2"
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="LastName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_amka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΑΜΚΑ:" />
+
+            <TextView
+                android:id="@+id/user_amka_value"
+                android:layout_width="173dp"
+                android:layout_height="match_parent"
+                android:text="User AMKA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Διεύθυνση:" />
+
+            <TextView
+                android:id="@+id/address_value"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:text="Address" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:" />
+
+            <TextView
+                android:id="@+id/email_value"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:text="Email" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/provision_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_list"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="175dp"
+        android:layout_toStartOf="@+id/date_text"
+        android:text="provision"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_list"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="176dp"
+        android:text="date"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="389dp"
+        android:layout_height="336dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="199dp"
+        android:background="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="186dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="86dp"
+        android:text="ΙΣΤΟΡΙΚΟ ΑΣΘΕΝΗ"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

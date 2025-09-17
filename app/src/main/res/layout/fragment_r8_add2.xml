@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".R8AddFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/personNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AMKA"
+        android:textColorHint="#878787"
+        app:endIconMode="clear_text"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="true">
+
+        <EditText
+            android:id="@+id/AMKAText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/provisionIDText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ΠΑΡΟΧΗ"
+        android:inputType="textPersonName" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:startYear="2023" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΑΠΟ:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/fromBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΑΠΟ" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΜΕΧΡΙ:" />
+
+    <Button
+        android:id="@+id/untilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΜΕΧΡΙ" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#49E64F"
+        android:text="Προσθήκη"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

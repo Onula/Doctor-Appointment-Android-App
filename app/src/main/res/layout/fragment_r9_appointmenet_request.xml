@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contextClickable="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/home_pic"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Επιλογή Γιατρού"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_pic"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/grammes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Γιατροί: "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle" />
+
+    <TextView
+        android:id="@+id/selection2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Είδος Θεραπείας: "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Επόμενο"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame2"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <LinearLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection">
+
+        <TextView
+            android:id="@+id/TVtry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Γιώργος Σλίδης , Παροχές : Παροχή Α,Παροχή Β"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TVtr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2. Κώστας Σλίδης , Παροχές : Παροχή Γ,Παροχή Δ"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frame2"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:contextClickable="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection2">
+
+        <TextView
+            android:id="@+id/TVtry113"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Επιλεγμένος Γιατρός : Γιώργος Σλίδης"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/TVtry11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Παροχή Α"
+            android:textAlignment="center"
+
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TVtr21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Παροχή Β"
+            android:textAlignment="center"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewSignoutout"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/signout"
+        app:layout_constraintEnd_toStartOf="@+id/menu_pic"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

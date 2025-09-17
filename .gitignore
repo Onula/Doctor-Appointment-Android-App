@@ -1,0 +1,21 @@
+﻿# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# Logs / Artifacts
+*.log
+*.apk
+*.ap_
+
+# PHP vendor (αν χρησιμοποιήσεις composer στο backend)
+backend/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
